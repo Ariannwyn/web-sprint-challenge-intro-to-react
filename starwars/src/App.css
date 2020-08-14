@@ -6,3 +6,117 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.lightsaber { 
+  position: relative; 
+  margin-top: 5%;
+}
+
+.lightsaber label {
+	cursor: pointer;
+	position: absolute;
+	bottom: 0;
+  left: 0;
+	z-index: 88;
+	text-indent: -9999px;
+	width: 50px;
+	height: 15px;
+	border-left: solid 4px grey;
+	border-right: solid 5px grey;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	background: rgb(226,226,226); /* Old browsers */
+	background: linear-gradient(to right, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* W3C */
+	background: -moz-linear-gradient(left, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(226,226,226,1)), color-stop(50%,rgba(219,219,219,1)), color-stop(51%,rgba(209,209,209,1)), color-stop(100%,rgba(254,254,254,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(226,226,226,1) 0%,rgba(219,219,219,1) 50%,rgba(209,209,209,1) 51%,rgba(254,254,254,1) 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=1 ); /* IE6-9 */
+}
+
+.lightsaber input[type=checkbox] {
+	position: absolute;
+	bottom: 0;
+  left: 0;
+  rotate: 90;
+	opacity: 0;
+	-moz-opacity: 0;
+	-webkit-opacity: 0;
+	-o-opacity: 0;
+	-ms-opacity: 0;
+	z-index: 77;
+}
+
+.lightsaber .plasma {
+	transition: width 300ms,;
+	-moz-transition: width 300ms;
+	-webkit-transition: width 300ms;
+	-o-transition: width 300ms;
+	-ms-transition: width 300ms;
+	border-radius: 12px 12px ;
+  position: absolute;
+  left: 50px;
+  bottom: 0px;
+	display: block;
+	filter: blur(1px);
+	-moz-filter: blur(1px);
+	-webkit-filter: blur(1px);
+	-o-filter: blur(1px);
+	-ms-filter: blur(1px);
+  height: 15px;
+  width: 0;
+}
+
+.lightsaber input[type=checkbox]:checked ~ div.plasma {
+  width: 450px;
+}
+
+.obi-wan {
+  background: -webkit-linear-gradient(left, rgba(55,132,214,1) 0%,rgba(254,254,254,1) 30%,rgba(254,254,254,1) 47%,rgba(254,254,254,1) 71%,rgba(55,132,214,1) 100%); /* Chrome10+,Safari5.1+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3784d6', endColorstr='#3784d6',GradientType=1 ); /* IE6-9 */
+  animation-name: obi-wan;
+	-moz-animation-name: obi-wan;
+	-webkit-animation-name: obi-wan;
+	-o-animation-name: obi-wan;
+	-ms-animation-name: obi-wan;
+	animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+	-o-animation-duration: 2s;
+	-ms-animation-duration: 2s;
+	animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+	-ms-animation-iteration-count: infinite;
+}
+
+
+@keyframes obi-wan {
+	from { box-shadow: 10 0 0px #3784d6; }
+	50% { box-shadow: 16 0 0px #3784d6; }
+	to { box-shadow: 10 0 0px #3784d6; }
+}
+@-moz-keyframes obi-wan {
+	from { box-shadow: 10 0 0px #3784d6; }
+	50% { box-shadow: 16 0 0px #3784d6; }
+	to { box-shadow: 10 0 0px #3784d6; }
+}
+@-webkit-keyframes obi-wan {
+	from { box-shadow: 10 0 0px #3784d6; }
+	50% { box-shadow: 16 0 0px #3784d6; }
+	to { box-shadow: 10 0 0px #3784d6; }
+}
+@-o-keyframes obi-wan {
+	from { box-shadow: 10 0 0px #3784d6; }
+	50% { box-shadow: 16 0 0px #3784d6; }
+	to { box-shadow: 10 0 0px #3784d6; }
+}
+@-ms-keyframes obi-wan {
+	from { box-shadow: 10 0 0px #3784d6; }
+	50% { box-shadow: 16 0 0px #3784d6; }
+	to { box-shadow: 10 0 0px #3784d6; }
+}
