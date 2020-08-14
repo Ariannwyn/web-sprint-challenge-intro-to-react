@@ -9,6 +9,7 @@ const StyledWrapper = styled.div`
     border-radius: 8px;
     margin: 4%;
     margin-left: 25%;
+    transition-delay: 2s;
     transition: transform 1000ms ease-in-out;
  
     &:hover {
